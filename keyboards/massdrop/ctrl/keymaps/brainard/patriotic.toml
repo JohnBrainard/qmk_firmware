@@ -1,0 +1,36 @@
+KeyLEDCount = 87
+EdgeLEDCount = 32
+
+[Colors]
+R = "FF0000" # Red
+W = "FFFFFF" # White
+B = "0000FF" # Blue
+
+[[Layers]]
+KeyLEDs = '''
+	R WWWW  BBBB RRRR WWW
+
+	RRRWWWWWWWWBBB BBB
+	RRRWWWWWWWBBBB BBB
+	RRRWWWWWWBBB B
+	RRRWWWWWBBB  B    B
+	RRR   W   BBBB   BBB
+'''
+
+[[Layers]]
+EdgeLEDs = '''
+	RRRRRRRRRRRRR
+	WWW
+	BBBBBBBBBBBBB
+	WWW
+'''
+
+[[Layers]]
+MatchLayers = [2]
+EdgeLEDs = '''
+	BBBBBBBBBBBBB
+	WWW
+	RRRRRRRRRRRRR
+	WWW
+'''
+

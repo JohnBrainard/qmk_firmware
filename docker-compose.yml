@@ -1,0 +1,13 @@
+
+version: '3.7'
+services:
+  qmk_firmware:
+    image: qmkfm/base_container
+    working_dir: /qmk_firmware/
+    volumes:
+      - "./:/qmk_firmware"
+
+    environment:
+      - ALT_GET_KEYBOARDS=true
+
+    command: make massdrop/ctrl:default_md massdrop/ctrl:brainard
